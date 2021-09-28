@@ -1,0 +1,5 @@
+rangoPP :: Int -> (Int, Int) -> String 
+rangoPP x (y,z)   | x < 0 = "esto no puede ser"
+                  | (0 <= x) && (x < y) = "muy barato"
+                  | (y <= x) && (x <= z) = " hay que verlo bien"
+                  | x > z = "demasiado caro"
